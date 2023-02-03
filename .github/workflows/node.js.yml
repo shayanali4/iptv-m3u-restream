@@ -17,7 +17,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-     # - run: pm2 stop stream
+     # - run: pm2 stop restream
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -25,5 +25,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm i
-      - run: pm2 start stream.js
-      #- run: pm2 restart stream
+      - run: pm2 start restream.js
+      #- run: pm2 restart restream
