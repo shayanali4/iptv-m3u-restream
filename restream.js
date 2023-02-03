@@ -136,7 +136,7 @@ if (cluster.isMaster) {
 else {
 
     // True if we're streaming
-    var streaming = false;
+    var streaming = true;
 
     cluster.worker.on('message', msg => {
         if (msg.type == 'channels') Channels = msg.channels;
