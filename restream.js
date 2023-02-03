@@ -273,7 +273,7 @@ else {
         var url = Url.parse(clientReq.url, true);
 
         // Send channels list as M3U
-        if (url.pathname.match(/channels/)) {
+        if (url.pathname.match(/iptv-channels/)) {
             var profile = (url.query && url.query.profile && Cfg.profiles[url.query.profile]) ?
                 url.query.profile : "default";
 

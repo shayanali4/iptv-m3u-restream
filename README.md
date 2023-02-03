@@ -67,7 +67,7 @@ In any server (hopefully SSL-enabled), pick a path location
 for your IPTV service, and link the proxy in like this:
 
 ```
-location /iptv/ {
+location /iptv-test/ {
     proxy_pass http://127.0.0.1:3666/;
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
