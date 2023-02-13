@@ -1,6 +1,6 @@
 {
   "extUrl": "https://infisom.com/iptv-test/",
-  "m3uSrc": "https://drogon.tv/w/NsxyD9dfWLMFzU8fDB",
+  "m3uSrc": "http://getmax.cx/get.php?username=INFISOMSPECIFIC&password=B1DWPVQMFG4X61KE&type=m3u_plus&output=mpegts",
   "port": 3666,
   "numWorkers": 3,
   "blacklist": [],
