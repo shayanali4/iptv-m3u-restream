@@ -136,7 +136,7 @@ if (cluster.isMaster) {
 else {
 
     // True if we're streaming
-    var streaming = true;
+    var streaming = false;
 
     cluster.worker.on('message', msg => {
         if (msg.type == 'channels') Channels = msg.channels;
@@ -273,7 +273,7 @@ else {
         var url = Url.parse(clientReq.url, true);
 
         // Send channels list as M3U
-        if (url.pathname.match(/iptv-channels/)) {
+        if (url.pathname.match(/channels/)) {
             var profile = (url.query && url.query.profile && Cfg.profiles[url.query.profile]) ?
                 url.query.profile : "default";
 
